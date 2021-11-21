@@ -25,3 +25,4 @@ If you are looking for url for your page, you can find it in `index.js` file.
 ![asd](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*1c74TKxuEW4AAAAAAAAAAABkARQnAQ)
 Here you can find these colors: [https://ant.design/docs/spec/colors](https://ant.design/docs/spec/colors).
 You can use other colors if you want.
+- Use git flow (main -> develop -> feature/feature_name)
