@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import LoginView from "./views/LoginView/LoginView";
+import RegisterView from "./views/RegisterView/RegisterView";
+import AddRecipeView from "./views/AddRecipeView/AddRecipeView";
+import RecipesView from "./views/RecipesView/RecipesView";
 
 ReactDOM.render(
     <Router>
         <Routes>
+            <Route path="/login" element={<LoginView/>}/>
+            <Route path="/register" element={<RegisterView/>}/>
+            <Route path="/add-recipe" element={<AddRecipeView/>}/>
+            <Route path="/recipes" element={<RecipesView/>}/>
         </Routes>
     </Router>,
     document.getElementById('root')
