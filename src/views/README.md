@@ -1,0 +1,3 @@
+# views
+
+Views contains pages.
