@@ -7,6 +7,9 @@ import LoginView from "./views/LoginView/LoginView";
 import RegisterView from "./views/RegisterView/RegisterView";
 import AddRecipeView from "./views/AddRecipeView/AddRecipeView";
 import RecipesView from "./views/RecipesView/RecipesView";
+import RecipeView from "./views/RecipeView/RecipeView";
+import EditRecipeView from "./views/EditRecipeView/EditRecipeView";
+import WhatIsInMyFridgeView from "./views/WhatIsInMyFridgeView/WhatIsInMyFridgeView";
 
 ReactDOM.render(
     <Router>
@@ -14,7 +17,10 @@ ReactDOM.render(
             <Route path="/login" element={<LoginView/>}/>
             <Route path="/register" element={<RegisterView/>}/>
             <Route path="/add-recipe" element={<AddRecipeView/>}/>
+            <Route path="/edit-recipe" element={<EditRecipeView/>}/>
             <Route path="/recipes" element={<RecipesView/>}/>
+            <Route path="/recipe" element={<RecipeView/>}/>
+            <Route path="/my-fridge" element={<WhatIsInMyFridgeView/>}/>
         </Routes>
     </Router>,
     document.getElementById('root')
