@@ -1,11 +1,20 @@
 import React from 'react';
+import recipeData from './recipeData';
+import Recipe from './Recipe';
+import {useParams} from "react-router-dom";
 
 const RecipeView = () => {
     /* todo(przemyslaw.skoczewski)
         Create simple layout with recipe (ingredients list, description, title, image)
      */
+    const data = recipeData.map(recipe => <Recipe key={recipe.id} title={recipe.title}
+    description={recipe.description} ingredientsList={recipe.ingredientsList} image={recipe.image} path={recipe.id}/>)
+    const { id } = useParams()
     return (
-        <img style={{width: "100%"}} src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-9/131154063_808081469774358_5959607727175039436_n.png?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=ViOxzerDg5oAX89w0EA&_nc_ht=scontent-waw1-1.xx&oh=1e1e35bb5c903c77b980851f77a0a6ec&oe=61C4A519" />
+        <div>
+            {data[id-1]}
+
+        </div>
     )
 };
 
