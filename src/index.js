@@ -19,7 +19,7 @@ ReactDOM.render(
             <Route path="/add-recipe" element={<AddRecipeView/>}/>
             <Route path="/edit-recipe" element={<EditRecipeView/>}/>
             <Route path="/recipes" element={<RecipesView/>}/>
-            <Route path="/recipe" element={<RecipeView/>}/>
+            <Route path="/recipe/:id" element={<RecipeView/>}/>
             <Route path="/my-fridge" element={<WhatIsInMyFridgeView/>}/>
         </Routes>
     </Router>,
